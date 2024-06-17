@@ -4,7 +4,6 @@ import { useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 
-
 export default function Home() {
   useEffect(() => {
     const script = document.createElement('script');
@@ -23,25 +22,25 @@ export default function Home() {
           <meta charSet="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <title>NautiTrail - Your Adventure Starts Here</title>
-          <link rel="icon" href="icon.ico" type="image/x-icon" />
+          <link rel="icon" href="/icon.ico" type="image/x-icon" />
         </Head>
-        <header className="sticky top-0 bg-black z-50">
+        <header className="sticky top-0 bg-black z-50 p-5 flex justify-between items-center">
           <div className="logo">
-            <Image src="/images/icon.svg" alt="NautiTrail Logo" width={150} height={150} />
+            <Image src="/images/icon.svg" alt="NautiTrail Logo" width={150} height={150} className="max-h-16" />
           </div>
           <nav>
-            <ul className="flex">
-              <li className="mx-4"><a href="#">Home</a></li>
-              <li className="mx-4"><a href="#about">About</a></li>
-              <li className="mx-4"><a href="#features">Features</a></li>
-              <li className="mx-4"><a href="#signup">Contact</a></li>
+            <ul className="flex space-x-4">
+              <li><a href="#" className="text-teal-400 no-underline text-base">Home</a></li>
+              <li><a href="#about" className="text-teal-400 no-underline text-base">About</a></li>
+              <li><a href="#features" className="text-teal-400 no-underline text-base">Features</a></li>
+              <li><a href="#signup" className="text-teal-400 no-underline text-base">Contact</a></li>
             </ul>
           </nav>
         </header>
 
-        <section id="hero" className="text-center p-24 bg-gray-100 text-white">
+        <section id="hero" className="text-center p-10 md:p-24 bg-gray-100 text-white">
           <div className="hero-content">
-            <h1 className="text-4xl mb-5">Your Adventure Starts Here</h1>
+            <h1 className="text-3xl md:text-4xl mb-5">Your Adventure Starts Here</h1>
             <p className="text-lg mb-5">Discover, book, and share unique outdoor rentals and experiences.</p>
             <a href="#signup" className="button bg-black text-white px-5 py-2 text-lg rounded">Join Our Journey</a>
           </div>
@@ -50,7 +49,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about" className="bg-gray-100 border border-gray-200 rounded-lg mx-auto my-5 max-w-2xl py-16 px-5">
+        <section id="about" className="bg-gray-100 border border-gray-200 rounded-lg mx-auto my-5 max-w-3xl py-16 px-5">
           <h2 className="text-teal-400 text-center text-3xl mb-5">About NautiTrail</h2>
           <p>
             NautiTrail is a peer-to-peer rental platform designed to connect outdoor
@@ -61,9 +60,9 @@ export default function Home() {
           </p>
         </section>
 
-        <section id="features" className="bg-gray-100 border border-gray-200 rounded-lg mx-auto my-5 max-w-2xl py-16 px-5">
+        <section id="features" className="bg-gray-100 border border-gray-200 rounded-lg mx-auto my-5 max-w-3xl py-16 px-5">
           <h2 className="text-teal-400 text-center text-3xl mb-5">Features</h2>
-          <div className="features-grid grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div className="features-grid grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="feature bg-white border border-gray-200 rounded-lg p-5 text-center">
               <h3 className="text-teal-400 text-xl mb-2">Trail Discovery</h3>
               <p>
@@ -96,7 +95,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="signup" className="bg-gray-100 border border-gray-200 rounded-lg mx-auto my-5 max-w-2xl py-16 px-5">
+        <section id="signup" className="bg-gray-100 border border-gray-200 rounded-lg mx-auto my-5 max-w-3xl py-16 px-5">
           <h2 className="text-teal-400 text-center text-3xl mb-5">Stay Updated with NautiTrail!</h2>
           <p>
             Join our journey as we build the ultimate platform for outdoor
@@ -109,7 +108,7 @@ export default function Home() {
         </section>
 
         <footer className="bg-black text-white text-center py-5">
-          <div className="footer-links mb-5">
+          <div className="footer-links flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 mb-5">
             <a href="#" className="text-teal-400 no-underline mx-2">Home</a>
             <a href="#about" className="text-teal-400 no-underline mx-2">About</a>
             <a href="#features" className="text-teal-400 no-underline mx-2">Features</a>
