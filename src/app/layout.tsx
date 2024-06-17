@@ -6,8 +6,8 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "NautiTrail",
-  description: "Your Adventure Awaits...",
+  title: "NautiTrail - Your Adventure Starts Here",
+  description: "Discover, Book, & Experience Life's Best Moments",
 };
 
 export default function RootLayout({
