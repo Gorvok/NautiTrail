@@ -23,6 +23,7 @@ export default function Home() {
           <meta charSet="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <title>NautiTrail - Your Adventure Starts Here</title>
+          <link rel="icon" href="icon.ico" type="image/x-icon" />
         </Head>
         <header className="sticky top-0 bg-black z-50">
           <div className="logo">
