@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 
+
 export default function Home() {
   useEffect(() => {
     const script = document.createElement('script');
@@ -22,7 +23,6 @@ export default function Home() {
           <meta charSet="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <title>NautiTrail - Your Adventure Starts Here</title>
-          <link rel="icon" href="/favicon.ico" type="image/png" />
         </Head>
         <header className="sticky top-0 bg-black z-50">
           <div className="logo">
