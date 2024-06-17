@@ -99,7 +99,7 @@ export default function Home() {
           <h2 className="text-teal-400 text-center text-3xl mb-5">Stay Updated with NautiTrail!</h2>
           <p>
             Join our journey as we build the ultimate platform for outdoor
-            enthusiasts. By signing up, you'll receive exclusive updates, early
+            enthusiasts. By signing up, you&apos;ll receive exclusive updates, early
             access to new features, and the latest news on outdoor adventures,
             rentals, and hidden gems. Be the first to know and never miss out on an
             opportunity to explore the great outdoors with NautiTrail.
