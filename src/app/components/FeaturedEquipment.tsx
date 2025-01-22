@@ -1,6 +1,7 @@
 "use client";
 
 import { FaStar, FaHeart } from "react-icons/fa";
+import Image from "next/image";
 
 const FeaturedEquipment = () => {
     const equipmentData = [
@@ -44,11 +45,12 @@ const FeaturedEquipment = () => {
                             className="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
                         >
                             {/* Image Section */}
-                            <div className="relative">
-                                <img
+                            <div className="relative w-full h-48">
+                                <Image
                                     src={item.image}
                                     alt={item.title}
-                                    className="w-full h-48 object-cover"
+                                    fill // Replaces `layout="fill"`
+                                    className="object-cover" // Replaces `objectFit="cover"`
                                 />
                                 <button className="absolute top-3 right-3 text-gray-600 bg-white rounded-full p-2 hover:text-red-500 transition">
                                     <FaHeart />

@@ -12,7 +12,7 @@ const SignupForm = () => {
             </h2>
             <p className="text-gray-300 text-lg text-center mb-8 leading-relaxed">
                 Join our journey as we build the ultimate platform for outdoor enthusiasts.
-                By signing up, you'll receive exclusive updates, early access to new
+                By signing up, you&apos;ll receive exclusive updates, early access to new
                 features, and the latest news on outdoor adventures, rentals, and hidden
                 gems. Be the first to know and never miss out on an opportunity to explore
                 the great outdoors with NautiTrail.
