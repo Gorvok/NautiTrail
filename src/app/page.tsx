@@ -24,19 +24,19 @@ export default function Home() {
           <title>NautiTrail - Your Adventure Starts Here</title>
           <link rel="icon" href="/icon.ico" type="image/x-icon" />
         </Head>
-        <header className="sticky top-0 bg-black z-50 p-5 flex justify-between items-center">
-          <div className="logo">
-            <Image src="/images/icon.svg" alt="NautiTrail Logo" width={150} height={150} className="max-h-16" />
-          </div>
-          <nav>
-            <ul className="flex space-x-4">
-              <li><a href="#" className="text-teal-400 no-underline text-base">Home</a></li>
-              <li><a href="#about" className="text-teal-400 no-underline text-base">About</a></li>
-              <li><a href="#features" className="text-teal-400 no-underline text-base">Features</a></li>
-              <li><a href="#signup" className="text-teal-400 no-underline text-base">Contact</a></li>
-            </ul>
-          </nav>
-        </header>
+        {/*<header className="sticky top-0 bg-black z-50 p-5 flex justify-between items-center">*/}
+        {/*  <div className="logo">*/}
+        {/*    <Image src="/images/icon.svg" alt="NautiTrail Logo" width={150} height={150} className="max-h-16" />*/}
+        {/*  </div>*/}
+        {/*  <nav>*/}
+        {/*    <ul className="flex space-x-4">*/}
+        {/*      <li><a href="#" className="text-teal-400 no-underline text-base">Home</a></li>*/}
+        {/*      <li><a href="#about" className="text-teal-400 no-underline text-base">About</a></li>*/}
+        {/*      <li><a href="#features" className="text-teal-400 no-underline text-base">Features</a></li>*/}
+        {/*      <li><a href="#signup" className="text-teal-400 no-underline text-base">Contact</a></li>*/}
+        {/*    </ul>*/}
+        {/*  </nav>*/}
+        {/*</header>*/}
 
         <section id="hero" className="text-center p-10 md:p-24 bg-gray-100 text-white">
           <div className="hero-content">
@@ -107,23 +107,23 @@ export default function Home() {
           <div className="ml-embedded" data-form="Vw11Tz"></div>
         </section>
 
-        <footer className="bg-black text-white text-center py-5">
-          <div className="footer-links flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 mb-5">
-            <a href="#" className="text-teal-400 no-underline mx-2">Home</a>
-            <a href="#about" className="text-teal-400 no-underline mx-2">About</a>
-            <a href="#features" className="text-teal-400 no-underline mx-2">Features</a>
-            <a href="#signup" className="text-teal-400 no-underline mx-2">Contact</a>
-          </div>
-          <div className="social-media flex justify-center items-center gap-2 mb-5">
-            <a href="https://www.facebook.com/NautiTrails/"><Image src="/images/facebook-round-color-icon.svg" alt="Facebook" width={24} height={24} /></a>
-            <a href="https://www.instagram.com/nautitrail/"><Image src="/images/ig-instagram-icon.svg" alt="Instagram" width={24} height={24} /></a>
-            <a href="https://www.threads.net/@nautitrail"><Image src="/images/threads-white-icon.svg" alt="Threads" width={24} height={24} /></a>
-            <a href="https://x.com/nautitrail"><Image src="/images/x-social-media-white-icon.svg" alt="X" width={24} height={24} /></a>
-            <a href="https://www.tiktok.com/@nauti_trail"><Image src="/images/tiktok-color-icon.svg" alt="TikTok" width={24} height={24} /></a>
-            <a href="https://www.linkedin.com/showcase/nautitrail/"><Image src="/images/linkedin-app-icon.svg" alt="LinkedIn" width={24} height={24} /></a>
-          </div>
-          <p className="footer-text text-gray-700">© 2024 NautiTrail. All Rights Reserved.</p>
-        </footer>
+        {/*<footer className="bg-black text-white text-center py-5">*/}
+        {/*  <div className="footer-links flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 mb-5">*/}
+        {/*    <a href="#" className="text-teal-400 no-underline mx-2">Home</a>*/}
+        {/*    <a href="#about" className="text-teal-400 no-underline mx-2">About</a>*/}
+        {/*    <a href="#features" className="text-teal-400 no-underline mx-2">Features</a>*/}
+        {/*    <a href="#signup" className="text-teal-400 no-underline mx-2">Contact</a>*/}
+        {/*  </div>*/}
+        {/*  <div className="social-media flex justify-center items-center gap-2 mb-5">*/}
+        {/*    <a href="https://www.facebook.com/NautiTrails/"><Image src="/images/facebook-round-color-icon.svg" alt="Facebook" width={24} height={24} /></a>*/}
+        {/*    <a href="https://www.instagram.com/nautitrail/"><Image src="/images/ig-instagram-icon.svg" alt="Instagram" width={24} height={24} /></a>*/}
+        {/*    <a href="https://www.threads.net/@nautitrail"><Image src="/images/threads-white-icon.svg" alt="Threads" width={24} height={24} /></a>*/}
+        {/*    <a href="https://x.com/nautitrail"><Image src="/images/x-social-media-white-icon.svg" alt="X" width={24} height={24} /></a>*/}
+        {/*    <a href="https://www.tiktok.com/@nauti_trail"><Image src="/images/tiktok-color-icon.svg" alt="TikTok" width={24} height={24} /></a>*/}
+        {/*    <a href="https://www.linkedin.com/showcase/nautitrail/"><Image src="/images/linkedin-app-icon.svg" alt="LinkedIn" width={24} height={24} /></a>*/}
+        {/*  </div>*/}
+        {/*  <p className="footer-text text-gray-700">© 2024 NautiTrail. All Rights Reserved.</p>*/}
+        {/*</footer>*/}
       </>
   );
 }
