@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import ClientSessionProvider from "@/app/components/ClientSessionProvider";
+// import ClientSessionProvider from "@/app/components/ClientSessionProvider";
 import { Analytics } from "@vercel/analytics/react";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <ClientSessionProvider>
+      // <ClientSessionProvider>
       <html lang="en">
       <body className={inter.className}>
       <Navbar/>
@@ -28,6 +28,6 @@ export default function RootLayout({
       <Footer/>
       </body>
       </html>
-      </ClientSessionProvider>
+      // </ClientSessionProvider>
   );
 }

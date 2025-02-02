@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const Navbar = () => {
-    const { data: session } = useSession();
+    // const { data: session } = useSession();
 
     return (
         <nav className="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-700 text-white p-4 shadow-md">
@@ -53,35 +53,35 @@ const Navbar = () => {
 
                 {/* Sign In / Sign Up or User Profile */}
                 <div className="flex items-center space-x-4">
-                    {!session ? (
-                        <>
-                            <button
-                                onClick={() => signIn()}
-                                className="text-gray-400 hover:text-teal-400 transition"
-                            >
-                                Sign In
-                            </button>
-                            <Link href="/signup">
-                                <button className="bg-teal-500 text-white px-4 py-2 rounded-md hover:bg-teal-400 transition">
-                                    Sign Up
-                                </button>
-                            </Link>
-                        </>
-                    ) : (
-                        <div className="flex items-center space-x-4">
-                            <span className="text-gray-400 text-sm">
-                                {session.user?.name}
-                            </span>
-                            <button
-                                onClick={() => signOut()}
-                                className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-500 transition"
-                            >
-                                Sign Out
-                            </button>
+                    {/*{!session ? (*/}
+                    {/*    <>*/}
+                    {/*        <button*/}
+                    {/*            onClick={() => signIn()}*/}
+                    {/*            className="text-gray-400 hover:text-teal-400 transition"*/}
+                    {/*        >*/}
+                    {/*            Sign In*/}
+                    {/*        </button>*/}
+                    {/*        <Link href="/signup">*/}
+                    {/*            <button className="bg-teal-500 text-white px-4 py-2 rounded-md hover:bg-teal-400 transition">*/}
+                    {/*                Sign Up*/}
+                    {/*            </button>*/}
+                    {/*        </Link>*/}
+                    {/*    </>*/}
+                    {/*) : (*/}
+                    {/*    <div className="flex items-center space-x-4">*/}
+                    {/*        <span className="text-gray-400 text-sm">*/}
+                    {/*            {session.user?.name}*/}
+                    {/*        </span>*/}
+                    {/*        <button*/}
+                    {/*            onClick={() => signOut()}*/}
+                    {/*            className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-500 transition"*/}
+                    {/*        >*/}
+                    {/*            Sign Out*/}
+                    {/*        </button>*/}
                         </div>
-                    )}
+                    {/*)}*/}
                 </div>
-            </div>
+            {/*</div>*/}
         </nav>
     );
 };
