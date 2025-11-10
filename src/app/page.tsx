@@ -48,14 +48,30 @@ export default function Home() {
           </button>
         </header>
 
-        <section id="hero" className="text-center p-10 md:p-24 bg-gray-100 text-white">
-          <div className="hero-content">
-            <h1 className="text-3xl md:text-4xl mb-5">Your Adventure Starts Here</h1>
-            <p className="text-lg mb-5">Discover, book, and share unique outdoor rentals and experiences.</p>
-            <a href="#signup" className="button bg-black text-white px-5 py-2 text-lg rounded">Join Our Journey</a>
+        <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+          <div className="absolute inset-0 z-0">
+            <Image
+              src="/images/hero-image.jpeg"
+              alt="Outdoor Adventure"
+              width={1920}
+              height={1080}
+              className="w-full h-full object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/50 to-slate-900/70"></div>
           </div>
-          <div className="hero-image">
-            <Image src="/images/hero-image.jpeg" alt="Outdoor Adventure" width={600} height={400} />
+          <div className="relative z-10 text-center px-4 md:px-8 max-w-4xl mx-auto">
+            <p className="text-teal-400 font-semibold text-sm md:text-base mb-4 uppercase tracking-widest">Discover Your Next Adventure</p>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">Your Adventure Starts Here</h1>
+            <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto leading-relaxed">Discover, book, and share unique outdoor rentals and experiences. Connect with fellow adventurers and explore the world like never before.</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a href="#signup" className="bg-gradient-to-r from-teal-400 to-cyan-400 text-slate-900 px-8 py-3.5 rounded-lg font-semibold text-base transition-all duration-300 hover:shadow-lg hover:shadow-teal-400/50 hover:scale-105">
+                Join Our Journey
+              </a>
+              <a href="#features" className="border-2 border-teal-400 text-teal-400 px-8 py-3 rounded-lg font-semibold text-base transition-all duration-300 hover:bg-teal-400 hover:text-slate-900">
+                Explore Features
+              </a>
+            </div>
           </div>
         </section>
 
