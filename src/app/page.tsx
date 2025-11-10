@@ -24,28 +24,54 @@ export default function Home() {
           <title>NautiTrail - Your Adventure Starts Here</title>
           <link rel="icon" href="/icon.ico" type="image/x-icon" />
         </Head>
-        <header className="sticky top-0 bg-black z-50 p-5 flex justify-between items-center">
-          <div className="logo">
-            <Image src="/images/icon.svg" alt="NautiTrail Logo" width={150} height={150} className="max-h-16" />
+        <header className="sticky top-0 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 z-50 px-6 md:px-12 py-4 flex justify-between items-center shadow-lg">
+          <div className="logo flex items-center gap-2 cursor-pointer group">
+            <span className="hidden md:inline text-xl font-bold bg-gradient-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent max-h-14 transition-transform duration-300 group-hover:scale-110">NautiTrail</span>
           </div>
-          <nav>
-            <ul className="flex space-x-4">
-              <li><a href="#" className="text-teal-400 no-underline text-base">Home</a></li>
-              <li><a href="#about" className="text-teal-400 no-underline text-base">About</a></li>
-              <li><a href="#features" className="text-teal-400 no-underline text-base">Features</a></li>
-              <li><a href="#signup" className="text-teal-400 no-underline text-base">Contact</a></li>
+          <nav className="hidden md:flex">
+            <ul className="flex space-x-1">
+              <li><a href="#" className="text-gray-200 no-underline text-base px-4 py-2 rounded-lg transition-all duration-300 hover:bg-teal-400 hover:text-slate-900 hover:font-semibold">Home</a></li>
+              <li><a href="#about" className="text-gray-200 no-underline text-base px-4 py-2 rounded-lg transition-all duration-300 hover:bg-teal-400 hover:text-slate-900 hover:font-semibold">About</a></li>
+              <li><a href="#features" className="text-gray-200 no-underline text-base px-4 py-2 rounded-lg transition-all duration-300 hover:bg-teal-400 hover:text-slate-900 hover:font-semibold">Features</a></li>
+              <li><a href="#signup" className="text-gray-200 no-underline text-base px-4 py-2 rounded-lg transition-all duration-300 hover:bg-teal-400 hover:text-slate-900 hover:font-semibold">Contact</a></li>
             </ul>
           </nav>
+          <div className="hidden md:block">
+            <a href="#signup" className="bg-gradient-to-r from-teal-400 to-cyan-400 text-slate-900 px-6 py-2.5 rounded-lg font-semibold text-sm transition-all duration-300 hover:shadow-lg hover:shadow-teal-400/50 hover:scale-105 inline-block">
+              Get Started
+            </a>
+          </div>
+          <button className="md:hidden text-teal-400 focus:outline-none">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </header>
 
-        <section id="hero" className="text-center p-10 md:p-24 bg-gray-100 text-white">
-          <div className="hero-content">
-            <h1 className="text-3xl md:text-4xl mb-5">Your Adventure Starts Here</h1>
-            <p className="text-lg mb-5">Discover, book, and share unique outdoor rentals and experiences.</p>
-            <a href="#signup" className="button bg-black text-white px-5 py-2 text-lg rounded">Join Our Journey</a>
+        <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+          <div className="absolute inset-0 z-0">
+            <Image
+              src="/images/hero-image.jpeg"
+              alt="Outdoor Adventure"
+              width={1920}
+              height={1080}
+              className="w-full h-full object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/50 to-slate-900/70"></div>
           </div>
-          <div className="hero-image">
-            <Image src="/images/hero-image.jpeg" alt="Outdoor Adventure" width={600} height={400} />
+          <div className="relative z-10 text-center px-4 md:px-8 max-w-4xl mx-auto">
+            <p className="text-teal-400 font-semibold text-sm md:text-base mb-4 uppercase tracking-widest">Discover Your Next Adventure</p>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">Your Adventure Starts Here</h1>
+            <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto leading-relaxed">Discover, book, and share unique outdoor rentals and experiences. Connect with fellow adventurers and explore the world like never before.</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a href="#signup" className="bg-gradient-to-r from-teal-400 to-cyan-400 text-slate-900 px-8 py-3.5 rounded-lg font-semibold text-base transition-all duration-300 hover:shadow-lg hover:shadow-teal-400/50 hover:scale-105">
+                Join Our Journey
+              </a>
+              <a href="#features" className="border-2 border-teal-400 text-teal-400 px-8 py-3 rounded-lg font-semibold text-base transition-all duration-300 hover:bg-teal-400 hover:text-slate-900">
+                Explore Features
+              </a>
+            </div>
           </div>
         </section>
 
