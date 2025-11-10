@@ -26,7 +26,6 @@ export default function Home() {
         </Head>
         <header className="sticky top-0 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 z-50 px-6 md:px-12 py-4 flex justify-between items-center shadow-lg">
           <div className="logo flex items-center gap-2 cursor-pointer group">
-            <Image src="/images/icon.svg" alt="NautiTrail Logo" width={150} height={150} className="max-h-14 transition-transform duration-300 group-hover:scale-110" />
             <span className="hidden md:inline text-xl font-bold bg-gradient-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent max-h-14 transition-transform duration-300 group-hover:scale-110">NautiTrail</span>
           </div>
           <nav className="hidden md:flex">
